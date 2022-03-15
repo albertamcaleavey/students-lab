@@ -6,7 +6,7 @@ const Student = (props) => {
       <h1>Name: {props.student.name}</h1>
       <p>Bio: {props.student.bio}</p>
       {props.student.scores.map(score => 
-      <Score score={score}/>
+      <Score key={score.score} score={score}/>
       )}
     </>
    );

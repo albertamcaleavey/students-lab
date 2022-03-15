@@ -76,5 +76,4 @@ function App() {
 
 export default App;
 
-// map inside app.js
-// map inside student component 
+// what's the difference between student={student} and student={student[idx]}? since it works both ways 
