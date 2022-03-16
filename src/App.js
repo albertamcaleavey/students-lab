@@ -67,7 +67,7 @@ function App() {
   return (
     <div>
       {students.map((student, idx) => 
-      <Student key={student.name} student={students[idx]} />
+      <Student key={idx} student={student} />
       )}
     </div>
 
@@ -76,4 +76,4 @@ function App() {
 
 export default App;
 
-// what's the difference between student={student} and student={student[idx]}? since it works both ways 
+// what's the difference between student={student} and student={students[idx]}? since it works both ways 
